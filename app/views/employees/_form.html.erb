@@ -1,0 +1,15 @@
+<%= form_for(@employee, remote: true) do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= f.label :salary %><br>
+    <%= f.number_field :salary %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

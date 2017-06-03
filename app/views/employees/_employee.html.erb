@@ -1,0 +1,11 @@
+<%= div_for employee do %>
+
+  <h3><%= employee.name %></h3>
+	<h4>Salario: <%= employee.salary %></h4>
+
+  <ul>
+   <li><%= link_to "Edit Employee", edit_employee_path(employee), remote: true %></li>
+   <li><%= link_to "Delete Employee", employee, remote: true, method: :delete %></li>
+  </ul>
+	<hr>
+<% end %>
